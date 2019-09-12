@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint">Write your text here</string>
+    <string name="save_note">Сохранить</string>
+
+    <string-array name="text_styles">
+        <item>Обычный</item>
+        <item>Полужирный</item>
+        <item>Курсив</item>
+        <item>Полужирный + Курсив</item>
+    </string-array>
+</resources>

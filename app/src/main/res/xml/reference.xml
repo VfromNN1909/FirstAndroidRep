@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Текстовые настойки">
+
+        <EditTextPreference
+            android:defaultValue="14"
+            android:dialogTitle="Введите новый размер шрифта (от 10 до 30)"
+            android:key="Размер"
+            android:summary="Настроить размер шрифта"
+            android:title="Размер шрифта" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="Выберите новый стиль шрифта"
+            android:entries="@array/text_styles"
+            android:entryValues="@array/text_styles"
+            android:key="Стиль"
+            android:summary="Выберите стиль шрифта"
+            android:title="Стиль шрифта" />
+
+        <PreferenceScreen
+            android:key="Цвет"
+            android:summary="Устанавливает цвет текста"
+            android:title="Цвет">
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="Черный"
+                android:summary="Устанавливает черный цвет"
+                android:title="Черный" />
+
+            <CheckBoxPreference
+                android:key="Красный"
+                android:summary="Устанавливает красный цвет"
+                android:title="Красный" />
+
+            <CheckBoxPreference
+                android:key="Зеленый"
+                android:summary="Устанавливает зеленый цвет"
+                android:title="Зеленый" />
+
+            <CheckBoxPreference
+                android:key="Синий"
+                android:summary="Устанавливает синий цвет"
+                android:title="Синий" />
+
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>
